@@ -51,21 +51,28 @@ section {
 article {
     width: 80%;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: white;
     line-height: 24px;
     border: 1px solid #dddddd;
     font-size: 16px;
-
 }
-img {
-    width:100px;
-    height:150px;
-    float: left;
-    padding: 5px;
-  }
-  hr {
-      width: 95%;
-  }
+hr {
+    width: 95%;
+}
+.column {
+    height: 100%;
+    width: 33.3%;
+}
+.project {
+    height: 120px;
+    width: 180px;
+    background-color: beige;
+    margin: 10px;
+}
+.project-name {
+    text-align: center;
+    padding-top: 60px;
+}
   footer {
       height: 71px;
       width: 100%;
@@ -74,7 +81,10 @@ img {
       border-top: 5px solid #4aaaa5;
   }
   p {
-      color: #777777;
-      padding: 10px;
+      width: 80%;
+      height: 20px;
+      background-color: #4AAAA5;
+      padding: 5px;
+      color: white;
   }
   
