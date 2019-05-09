@@ -1,58 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
 
-<!doctype html>
-<html>
-    <head>
-        <title>Portfolio (About)</title>
-
-        <meta charset="utf-8" />
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    </head>
-
-    <body>
-
-        <div id="header-container">
-
-            <header>
-
-                    <div id="name">
-                        <h1>Daniel Rodriguez</h1>
-                    </div>
-
-                    <div id="links">
-                        <a href="">About</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-
-            </header>
-        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="name">Daniel Rodriguez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="homeNav">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="portfolioNav">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contactNav">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <div class="container" id="about">
+    
+        <!-- Jumbotron Header -->
+        <header class="jumbotron my-4">
+            <h1>About Me</h1>
+            <hr>
+            <img src="assets/images/profile.jpg" class="float-left" id="picture">
+            <p class="lead">
+                My name is Daniel Alejandro Rodriguez Giraldo, I was born in 1994 in Bogota, Colombia.
+                I like to play the piano, hiking, biking, videogames and coding.
+                <br>
+                I am currently a student for the fullstack web development bootcamp provided by the Tecnológico de Monterrey.
+                <br>
+                All the projects shown in this portfolio are available in my github page.
+                <a href="https://github.com/alejdan">https://github.com/alejdan</a>
+            </p>
+        </header>
+    
+    </div>
+
+    <div class="container" id="portfolio">
+
+        <div class="row text-center">
         
-        <section>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top image" src="assets/images/Letter_Guess.jpg" alt="Letter Guessing Game">
+                    <div class="card-body">
+                        <h4 class="card-title">Letter Guessing Game</h4>
+                        <p class="card-text">A simple letter guessing game.</p>
+                    </div>
+                </div>
+            </div>
 
-            <article>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top image" src="assets/images/crystal_collector.jpg" alt="Crystal collector game">
+                    <div class="card-body">
+                        <h4 class="card-title">Crystal Collector</h4>
+                        <p class="card-text">A game in which various crystals have different values and the player must reach the goal by adding the different randomized values of the crystals.</p>
+                    </div>
+                </div>
+            </div>
 
-                <h2>About Me</h2>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top image" src="assets/images/trivia_game.jpg" alt="Trivia Game">
+                    <div class="card-body">
+                        <h4 class="card-title">Trivia Game</h4>
+                        <p class="card-text">A simple videogame themed trivia game.</p>
+                    </div>
+                </div>
+            </div>
 
-                <hr>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top image" src="assets/images/gif_generator.jpg" alt="Gif Generator">
+                    <div class="card-body">
+                        <h4 class="card-title">Gif Generator</h4>
+                        <p class="card-text">An app for fetching videogame themed gifs from the giphy API.</p>
+                    </div>
+                </div>
+            </div>
 
-                <img src="assets/images/profile.jpg"/>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top image" src="assets/images/train_time.jpg" alt="Train Time Table">
+                    <div class="card-body">
+                        <h4 class="card-title">Train Time</h4>
+                        <p class="card-text">A real time table showing the departures and arrivals of customizable trains.</p>
+                    </div>
+                </div>
+            </div>
 
-                <p id="first-paragraph">My name is Daniel Alejandro Rodriguez Giraldo, I was born in Bogota, Colombia on October 4th, 1994.</p>
-                <p>I am currently a student in a full-stack web development bootcamp. This is my web portfolio.</p>
-                <p>I am a fan of technology, especially videogames, and enjoy hiking, biking and playing the piano.</p>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top image" src="assets/images/My_coin.jpg" alt="My coin project">
+                    <div class="card-body">
+                        <h4 class="card-title">My Coin</h4>
+                        <p class="card-text">A simple app for displaying cryptocurrency exchange rates as well as money related gifs and recently searched items.</p>
+                    </div>
+                </div>
+            </div>
 
-            </article>
+        </div>
 
-        </section>
+    </div>
 
-        <footer>
-            
-        </footer>
+    <div class="container" id="contact">
 
-    </body>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+        
+            <div class="messages"></div>
+        
+            <div class="controls">
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">Firstname *</label>
+                            <input id="form_name" type="text" name="name" class="form-control"
+                                placeholder="Please enter your firstname *" required="required"
+                                data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Lastname *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control"
+                                placeholder="Please enter your lastname *" required="required"
+                                data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control"
+                                placeholder="Please enter your email *" required="required"
+                                data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
+                                rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                </div>
+            </div>
+        
+        </form>
 
+    </div>
+
+</body>
 </html>

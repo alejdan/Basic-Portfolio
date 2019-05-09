@@ -1,80 +1,17 @@
-body {
-    margin: 0;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+#main {
+    background-color: green;
+    margin-top: 20px;
 }
-h1, h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#picture {
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
 }
-header {
-    width: 80%;
-    height: 120px;
-    margin: 0 auto;
-    background-color: white;
-    text-align: center;
+.jumbotron {
+    overflow: auto;
 }
-#header-container {
-    background-color: white;
-    border-bottom: 30px solid #DDDDDD;
+.image {
+    width: 500px;
+    height: 325px;
 }
-#name {
-    height: 100%;
-    float: left;
-    background-color: #4aaaa5;
-    color: white;
-}
-h1 {
-    padding: 10px;
-    margin-top: 30px;
-}
-#links {
-    float: right;
-    margin-top: 50px;
-}
-a {
-    text-decoration: none;
-    margin: 0 20px;
-}
-a:visited {
-    color: #777777;
-}
-
-h2 {
-    margin: 0;
-    color: #4AAAA5;
-}
-section {
-    width: 100%;
-    height: 500px;
-    clear: both;
-    background-color: #DDDDDD;
-}
-article {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    line-height: 24px;
-    border: 1px solid #dddddd;
-    font-size: 16px;
-
-}
-img {
-    width:100px;
-    height:150px;
-    float: left;
-    padding: 5px;
-  }
-  hr {
-      width: 95%;
-  }
-  footer {
-      height: 71px;
-      width: 100%;
-      border-top: ;
-      background-color: #666666;
-      border-top: 5px solid #4aaaa5;
-  }
-  p {
-      color: #777777;
-      padding: 10px;
-  }
-  
